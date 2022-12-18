@@ -1,0 +1,1567 @@
+{
+  "id": "f065452c-a6de-4f5f-abd4-5e29b6d8803c",
+  "version": "2.0",
+  "name": "ShopDemoQA",
+  "url": "https://shop.demoqa.com/",
+  "tests": [{
+    "id": "6ef01f11-6d66-4551-a98c-fe5eb40f814f",
+    "name": "SearchBarLinkNon-ExistingProduct",
+    "commands": [{
+      "id": "578c09e0-0a71-45c1-8b05-147f42d25eea",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d76e1fb9-8511-432f-a90c-49ac7e25714a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cef26afd-4504-4e1f-9a60-e0ea7475618f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.noo-search", "css:finder"],
+        ["xpath=//div[@id='noo-site']/header/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbb7274a-50ef-49b5-91b1-8560b15fefb0",
+      "comment": "",
+      "command": "type",
+      "target": "name=s",
+      "targets": [
+        ["name=s", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//div[@id='noo-site']/header/div[3]/div[2]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "alabala100"
+    }, {
+      "id": "2e1c5111-b494-4161-8be2-199a87ce1057",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=s",
+      "targets": [
+        ["name=s", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//div[@id='noo-site']/header/div[3]/div[2]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "04353cfc-bcec-4aec-a7a2-1cd2e09894aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.woocommerce-info",
+      "targets": [
+        ["css=.woocommerce-info", "css:finder"],
+        ["xpath=//div[@id='noo-site']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'No products were found matching your selection.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01c3c96b-7a4c-411a-805f-f6e5e6e4ad64",
+      "comment": "This is a bug into the site check #BUG-ID 6",
+      "command": "verifyText",
+      "target": "css=.woocommerce-info",
+      "targets": [],
+      "value": "Sorry, but nothing matched your search criteria. Please try again with some different keywords"
+    }, {
+      "id": "6f1d3150-366e-4384-baa4-8e32da9afc46",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a37992fb-8360-41ec-975a-b9b85cc03824",
+    "name": "SearchExistingProduct",
+    "commands": [{
+      "id": "bc5237aa-391e-4899-8ee5-4e4f062b131b",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ffd468d-393d-4017-b341-cf3a18b05cd9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b29ec8a-0b03-4821-93a4-b91f76988ae6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.noo-search", "css:finder"],
+        ["xpath=//div[@id='noo-site']/header/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0a7003b-9d0d-4a57-a159-ae37d6c1c036",
+      "comment": "",
+      "command": "type",
+      "target": "name=s",
+      "targets": [
+        ["name=s", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//div[@id='noo-site']/header/div[3]/div[2]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "dress"
+    }, {
+      "id": "c9410b72-5826-423f-bf6a-1208c95d353d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=s",
+      "targets": [
+        ["name=s", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='s']", "xpath:attributes"],
+        ["xpath=//div[@id='noo-site']/header/div[3]/div[2]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "fac52448-e10d-43df-b5af-be4a27617b54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.noo-catalog",
+      "targets": [
+        ["css=.noo-catalog", "css:finder"],
+        ["xpath=//div[@id='noo-site']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8be74b61-ada4-4877-b16a-03814e2fc152",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.woocommerce-result-count",
+      "targets": [
+        ["css=.woocommerce-result-count", "css:finder"],
+        ["xpath=//div[@id='noo-site']/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Showing all 16 results')]", "xpath:innerText"]
+      ],
+      "value": "Showing all 16 results"
+    }, {
+      "id": "7176a500-45da-4ca5-b5c4-ccc26e39f13f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "961aceac-d6e6-446e-abb1-fb1d53707ac1",
+    "name": "CheckMyAccountsLinks",
+    "commands": [{
+      "id": "176fafe4-a456-4f76-8b26-5e64e06af2f7",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18aa8842-2344-4266-b3f3-386074659075",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0190d0b9-9f91-4a70-85d0-2ae9bb60403e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59b3e712-640d-4d32-96f2-972ad1804eb5",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18c5db8c-9f99-4d51-8642-2f866543ee87",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "test21"
+    }, {
+      "id": "746c77ea-8f57-45fb-ae09-e1d5e3aad8c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52e750dc-0428-4c5c-89be-0c4c0f2cc90b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "AlaBala@69"
+    }, {
+      "id": "f9706385-592d-4594-afad-11f3af29a51d",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "551e4e49-2193-4d57-8c83-adf563a10ee0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Orders",
+      "targets": [
+        ["linkText=Orders", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--orders > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Orders')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/orders/')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Orders')]", "xpath:innerText"]
+      ],
+      "value": "Orders"
+    }, {
+      "id": "3b254392-4e5c-4cc5-b34f-bf2ac28ebb3a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Downloads",
+      "targets": [
+        ["linkText=Downloads", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--downloads > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Downloads')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/downloads/')]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Downloads')]", "xpath:innerText"]
+      ],
+      "value": "Downloads"
+    }, {
+      "id": "99169c37-594b-49d5-8adc-de85573b3da6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Addresses",
+      "targets": [
+        ["linkText=Addresses", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--edit-address > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Addresses')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/edit-address/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Addresses')]", "xpath:innerText"]
+      ],
+      "value": "Addresses"
+    }, {
+      "id": "cd50f553-bf96-439e-a2f3-949e2546c5e7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Account details",
+      "targets": [
+        ["linkText=Account details", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--edit-account > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account details')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/edit-account/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account details')]", "xpath:innerText"]
+      ],
+      "value": "Account details"
+    }, {
+      "id": "dee9d9c6-7fa2-47b0-9a80-46faedc3188d",
+      "comment": "This is a bug into the site check #BUG-ID 12",
+      "command": "verifyText",
+      "target": "",
+      "targets": [],
+      "value": "Favorites"
+    }, {
+      "id": "bc2f12fd-c9e3-4ae3-ae49-0e76e365f248",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//a[contains(text(),'Logout')]",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--customer-logout > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/customer-logout/?_wpnonce=68787dd8df')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": "Logout"
+    }, {
+      "id": "8aa84196-cc32-441b-9261-e7a39e9f1afc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--customer-logout > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/customer-logout/?_wpnonce=68787dd8df')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b019a23-44e3-4781-b761-b992d3591f9f",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//a[contains(text(),'Logout')]",
+      "targets": [],
+      "value": "Logout"
+    }, {
+      "id": "fe43ace8-62ac-4322-bc2f-2af2d9ab74cc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6818cd85-973a-4042-8ff4-dd2748eb8928",
+    "name": "CheckNavigationBarContentUsingNonLoggedInUser",
+    "commands": [{
+      "id": "39249d92-2b18-49a3-b411-46458b3afe58",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58325b68-c205-4dca-962a-cee681ead603",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc2589fc-3ade-477c-a123-4a82032a5956",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=nomail@toolsqa.com",
+      "targets": [
+        ["linkText=nomail@toolsqa.com", "linkText"],
+        ["css=.pull-left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'nomail@toolsqa.com')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:nomail@toolsqa.com')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'nomail@toolsqa.com')]", "xpath:innerText"]
+      ],
+      "value": "nomail@toolsqa.com"
+    }, {
+      "id": "94451e21-fc07-4feb-b11c-7c101424632b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=+(099) 999 - 9999",
+      "targets": [
+        ["linkText=+(099) 999 - 9999", "linkText"],
+        ["css=.pull-left > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'+(099) 999 - 9999')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'tel:+(099)999-9999')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'+(099) 999 - 9999')]", "xpath:innerText"]
+      ],
+      "value": "+(099) 999 - 9999"
+    }, {
+      "id": "231856e0-f011-439c-afcb-9880d5dc29a9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=My Wishlist",
+      "targets": [
+        ["linkText=My Wishlist", "linkText"],
+        ["css=.pull-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Wishlist')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/wishlist/')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Wishlist')]", "xpath:innerText"]
+      ],
+      "value": "My Wishlist"
+    }, {
+      "id": "0500357b-e946-4012-8d8c-2b9294c43925",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": "My Account"
+    }, {
+      "id": "a7797883-d98e-46ef-9ab0-11179b4b9617",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.noo-search", "css:finder"],
+        ["xpath=//div[@id='noo-site']/header/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8abcc0d-73d4-4883-8983-8925426984b8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.custom-logo:nth-child(1)",
+      "targets": [
+        ["css=.custom-logo:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='ToolsQA Demo Site']", "xpath:img"],
+        ["xpath=//div[@id='noo-site']/header/div[2]/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "897c64d6-7ee3-4e1a-b343-df0236899345",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.custom-logo:nth-child(1)",
+      "targets": [
+        ["css=.custom-logo:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='ToolsQA Demo Site']", "xpath:img"],
+        ["xpath=//div[@id='noo-site']/header/div[2]/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9de5f52f-ad42-4a61-b364-b7936365f7f7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6c1f5c9c-aa38-40bb-9e3e-3447fbec97c9",
+    "name": "CheckNavigationBarContentUsingLoggedUser",
+    "commands": [{
+      "id": "4fea047d-e629-43c4-ad61-b667bececa3a",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92ecbfa6-f108-4c18-9946-f6409bb1a200",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e178d945-fd13-4f11-93ff-e5b236d4e218",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "275bad51-4755-4e02-998d-f6da85a15027",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcb6385a-21c5-4930-9c83-60914ad121f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "test21"
+    }, {
+      "id": "0237bce5-7d08-4e4d-8a99-6ebea6af6086",
+      "comment": "",
+      "command": "click",
+      "target": "css=.woocommerce-form-login > .woocommerce-form-row:nth-child(2) > label",
+      "targets": [
+        ["css=.woocommerce-form-login > .woocommerce-form-row:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/label", "xpath:idRelative"],
+        ["xpath=//p[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd270723-214e-44d9-b6ad-821e753878e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ced10cf-75ca-427e-ba0b-72530d89af66",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "AlaBala@69"
+    }, {
+      "id": "20aa6555-2a9a-482a-b8a4-0e982dd40c8b",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25aac703-cb76-4ad9-8695-4fe52af77848",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=nomail@toolsqa.com",
+      "targets": [
+        ["linkText=nomail@toolsqa.com", "linkText"],
+        ["css=.pull-left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'nomail@toolsqa.com')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:nomail@toolsqa.com')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'nomail@toolsqa.com')]", "xpath:innerText"]
+      ],
+      "value": "nomail@toolsqa.com"
+    }, {
+      "id": "63f6f169-354f-4326-abdf-33870552eeea",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=+(099) 999 - 9999",
+      "targets": [
+        ["linkText=+(099) 999 - 9999", "linkText"],
+        ["css=.pull-left > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'+(099) 999 - 9999')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'tel:+(099)999-9999')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'+(099) 999 - 9999')]", "xpath:innerText"]
+      ],
+      "value": "+(099) 999 - 9999"
+    }, {
+      "id": "f9198058-bfe8-40d9-8cfd-c714d2276500",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=My Wishlist",
+      "targets": [
+        ["linkText=My Wishlist", "linkText"],
+        ["css=.pull-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Wishlist')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/wishlist/')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Wishlist')]", "xpath:innerText"]
+      ],
+      "value": "My Wishlist"
+    }, {
+      "id": "56178392-755d-4dd2-945c-147cf7f3bfac",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": "My Account"
+    }, {
+      "id": "4fae4603-2de2-4895-b44e-ff06c6fe7f1c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Checkout",
+      "targets": [
+        ["linkText=Checkout", "linkText"],
+        ["css=.pull-right > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkout')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/checkout/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": "Checkout"
+    }, {
+      "id": "471badd7-7e13-4566-a1ec-baff010a7659",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.noo-search", "css:finder"],
+        ["xpath=//div[@id='noo-site']/header/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Search')]", "xpath:innerText"]
+      ],
+      "value": "Search"
+    }, {
+      "id": "937acdcb-5d93-4ccb-9b89-2185003dd37e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.custom-logo:nth-child(1)",
+      "targets": [
+        ["css=.custom-logo:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='ToolsQA Demo Site']", "xpath:img"],
+        ["xpath=//div[@id='noo-site']/header/div[2]/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1909c24-7a3b-48b5-901e-1b474e783731",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Logout')]",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--customer-logout > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/customer-logout/?_wpnonce=f59786d2c8')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd3a27ab-1c5c-4b6f-8f22-77a7a9db8111",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//a[contains(text(),'Logout')]",
+      "targets": [],
+      "value": "Logout"
+    }, {
+      "id": "7daf73da-f0ea-47d5-bc5e-0bbd2e936555",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d4f4a785-06b1-4784-8b4d-51cbd240a7ba",
+    "name": "ValidRegistration",
+    "commands": [{
+      "id": "32f3c85e-05ca-415d-a444-139be23c369d",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d49611a4-e826-4184-b488-5c3ae9c9925a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b11723ad-970b-4c50-8a99-b500113d9f32",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b99aef5a-b0ce-4c87-9aec-a84770a20395",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"pecun\" + Math.floor(Math.random() * 10000000000000)",
+      "targets": [],
+      "value": "username"
+    }, {
+      "id": "b2d41ae6-8537-491b-8f9f-6b42e9556f9a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${username}+\"@gmaila1.com\"",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "938154c7-c064-4d20-a24d-ae83d3000878",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${username}+\"@!@#AlaBala23\"",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "f0fa6b5f-de83-495b-b28f-3e4eef5907ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=reg_username",
+      "targets": [
+        ["id=reg_username", "id"],
+        ["css=#reg_username", "css:finder"],
+        ["xpath=//input[@id='reg_username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f47964f4-8b70-43a9-a763-be05be0a50f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=reg_username",
+      "targets": [
+        ["id=reg_username", "id"],
+        ["css=#reg_username", "css:finder"],
+        ["xpath=//input[@id='reg_username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/p/input", "xpath:position"]
+      ],
+      "value": "${username}"
+    }, {
+      "id": "d4ee3e7c-87e5-4eed-9ac1-058cbccaacce",
+      "comment": "",
+      "command": "type",
+      "target": "id=reg_email",
+      "targets": [
+        ["id=reg_email", "id"],
+        ["name=email", "name"],
+        ["css=#reg_email", "css:finder"],
+        ["xpath=//input[@id='reg_email']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "12015802-942a-4df7-8bf2-c3e790c5766c",
+      "comment": "",
+      "command": "type",
+      "target": "id=reg_password",
+      "targets": [
+        ["id=reg_password", "id"],
+        ["css=#reg_password", "css:finder"],
+        ["xpath=//input[@id='reg_password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[3]/span/input", "xpath:idRelative"],
+        ["xpath=//p[3]/span/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "02df46c9-a125-4624-8c5e-95c6d636e9d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=register",
+      "targets": [
+        ["name=register", "name"],
+        ["css=.woocommerce-Button", "css:finder"],
+        ["xpath=//button[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div[2]/form/p[4]/button", "xpath:idRelative"],
+        ["xpath=//p[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bc22868-ba9e-41bf-a431-d52ae350513d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.woocommerce",
+      "targets": [
+        ["css=.woocommerce", "css:finder"],
+        ["xpath=//article[@id='post-8']/div/div", "xpath:idRelative"],
+        ["xpath=//article/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af569e9c-2970-490f-bcc3-7f73c60ec308",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=recent orders",
+      "targets": [
+        ["linkText=recent orders", "linkText"],
+        ["css=p:nth-child(3) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'recent orders')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://shop.demoqa.com/my-account/orders/')])[2]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'recent orders')]", "xpath:innerText"]
+      ],
+      "value": "recent orders"
+    }, {
+      "id": "7f2b36ae-f87f-426c-aa0a-34ebb600f3e3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Logout')]",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.woocommerce-MyAccount-navigation-link--customer-logout > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//article[@id='post-8']/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/customer-logout/?_wpnonce=7ac9d76f7e')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cd538c0-a43e-4912-bff2-aa06d3bc8187",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//a[contains(text(),'Logout')]",
+      "targets": [],
+      "value": "Logout"
+    }, {
+      "id": "3629b67f-7e03-4a67-bfac-5ecfafa02705",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7397d3f3-7068-44dd-8ef3-816b1175370d",
+    "name": "TryToLoginWithoutPassword",
+    "commands": [{
+      "id": "744826a0-b86a-438c-ac52-b74bef643871",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4832228-6813-481c-a871-1423a028be44",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bafe28e9-7464-4d0f-a6d4-fab2b48cb7a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15dec326-31c6-4359-b922-c83fcc865f1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e0ffc02-5fb8-4490-a98e-78a65bc80fb6",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest21"
+    }, {
+      "id": "697a3ab4-d1f6-4a03-acfc-ce6bdb446f8d",
+      "comment": "",
+      "command": "assertText",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": "Log in"
+    }, {
+      "id": "16e7e348-0df6-4da0-af47-56da30a7a664",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b79c52a-c0e2-481a-8c79-93f1597c37d2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.woocommerce-error > li",
+      "targets": [
+        ["css=.woocommerce-error > li", "css:finder"],
+        ["xpath=//article[@id='post-8']/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//article/div/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Error: The password field is empty.')]", "xpath:innerText"]
+      ],
+      "value": "Error: The password field is empty."
+    }, {
+      "id": "38829f24-fcc4-4f47-8959-acd2f4572545",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5fa78dc6-4e3c-4738-86ab-e183ef514373",
+    "name": "TryToLoginWithoutUsername",
+    "commands": [{
+      "id": "abc1c13c-27ee-444a-bf77-3dd81c0b6c3e",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6b76cf4-9f8c-4a15-91c1-fb2f45eb6ab5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59cf7480-207d-45ce-bdcc-b330988eb9a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": "My Account"
+    }, {
+      "id": "a7830b2c-d3f2-480a-9146-18f9f024bc16",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0b2b249-235e-4551-a83c-ffe64bbf98a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": "Log in"
+    }, {
+      "id": "7882e44c-8d5f-4dbd-90a4-2cfbd57c3dad",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c06951a-3538-4816-96b7-dfa0df3ec5f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "alabala12345"
+    }, {
+      "id": "e3af3b2d-493c-4452-b1e2-58e14bde479a",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ff54a26-b7e7-495b-b229-e7873073b431",
+      "comment": "",
+      "command": "click",
+      "target": "css=.woocommerce-error > li",
+      "targets": [
+        ["css=.woocommerce-error > li", "css:finder"],
+        ["xpath=//article[@id='post-8']/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//article/div/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Error: Username is required.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a08c593-cbbf-4b10-8f88-656000bd938f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//article[@id='post-8']/div/div/div/ul/li/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Error:')]", "xpath:innerText"]
+      ],
+      "value": "Error:"
+    }, {
+      "id": "fcf9253a-3cce-4414-bd84-5aa6988ac04f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2caa3153-68fc-49ab-a3c9-f010936a6089",
+    "name": "AccesingTheSystemWithGoogleChrome",
+    "commands": [{
+      "id": "048f5484-dc60-4628-ae0e-69aa65a3c97e",
+      "comment": "",
+      "command": "open",
+      "target": "https://google.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e7d830a-6654-4467-b295-b47d4a0e09b3",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [],
+      "value": "https://shop.demoqa.com/"
+    }, {
+      "id": "e179d9bd-3c93-45dd-9c06-406e7b34d9e3",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f276a37c-dd8f-4a69-85cf-3670103da570",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=q",
+      "targets": [],
+      "value": "https://shop.demoqa.com/"
+    }, {
+      "id": "0aba72e7-92b7-482b-bd5a-d038d8b7b186",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=q",
+      "targets": [],
+      "value": "https://shop.demoqa.com/"
+    }, {
+      "id": "b167a7ff-0d9c-4a40-8eb0-c56b73fc09df",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1d0c438d-9367-4514-a578-33541406c550",
+    "name": "CheckForgotPassword",
+    "commands": [{
+      "id": "066d527c-2d88-45b8-b181-8e467af5c0e3",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6a7a1d0-383a-42b2-b702-cda6f0bab42d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f322ee94-a898-4ca9-8789-8310cb325a81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe0ecdc4-27ec-42ae-92c3-21ebaf1f97f1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": "My Account"
+    }, {
+      "id": "33bff409-13d8-4731-9f58-368578f219f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Lost your password?",
+      "targets": [
+        ["linkText=Lost your password?", "linkText"],
+        ["css=.woocommerce-LostPassword > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Lost your password?')]", "xpath:link"],
+        ["xpath=//div[@id='customer_login']/div/form/p[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/lost-password/')]", "xpath:href"],
+        ["xpath=//p[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lost your password?')]", "xpath:innerText"]
+      ],
+      "value": "Lost your password?"
+    }, {
+      "id": "d2fc6b8b-5735-4367-84e5-f41e6d31675c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lost your password?",
+      "targets": [
+        ["linkText=Lost your password?", "linkText"],
+        ["css=.woocommerce-LostPassword > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Lost your password?')]", "xpath:link"],
+        ["xpath=//div[@id='customer_login']/div/form/p[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/my-account/lost-password/')]", "xpath:href"],
+        ["xpath=//p[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lost your password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40cdb9f9-eefa-4af8-8c0a-38942bcb50dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=user_login", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//article[@id='post-8']/div/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41eb9681-964c-4890-baff-2429c504438e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=user_login", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//article[@id='post-8']/div/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "alabala@abv.bg"
+    }, {
+      "id": "6780890a-ba34-45dc-a7dd-63f25dcfa49d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.woocommerce-Button",
+      "targets": [
+        ["css=.woocommerce-Button", "css:finder"],
+        ["xpath=//button[@value='Reset password']", "xpath:attributes"],
+        ["xpath=//article[@id='post-8']/div/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reset password')]", "xpath:innerText"]
+      ],
+      "value": "Reset password"
+    }, {
+      "id": "e9a468d7-8985-49de-8702-cc8fb42505df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.woocommerce-Button",
+      "targets": [
+        ["css=.woocommerce-Button", "css:finder"],
+        ["xpath=//button[@value='Reset password']", "xpath:attributes"],
+        ["xpath=//article[@id='post-8']/div/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reset password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7f17d8f-b90f-4bca-8285-115840bac58a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.woocommerce-message",
+      "targets": [
+        ["css=.woocommerce-message", "css:finder"],
+        ["xpath=//article[@id='post-8']/div/div/div", "xpath:idRelative"],
+        ["xpath=//article/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e0b6141-de21-4174-9d9e-cef75e324b51",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.woocommerce-message",
+      "targets": [
+        ["css=.woocommerce-message", "css:finder"],
+        ["xpath=//article[@id='post-8']/div/div/div", "xpath:idRelative"],
+        ["xpath=//article/div/div/div", "xpath:position"]
+      ],
+      "value": "Password reset email has been sent."
+    }, {
+      "id": "03277e16-4908-434f-ba4d-be9c2400154d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d2db39df-725a-443b-9767-8cb39f684487",
+    "name": "Echo",
+    "commands": [{
+      "id": "27b128af-be47-47cd-aad4-f79edf9db72b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"pecun\" + Math.floor(Math.random() * 10000000000000)",
+      "targets": [],
+      "value": "username"
+    }, {
+      "id": "b901a1b5-b27d-48e1-a149-80d42a7d12f4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"pecun\" + Math.floor(Math.random() * 10000000000000)",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "db3a24be-a36e-450d-a2bc-d745828e9404",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${username}+\"@!@#AlaBala23\"",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "4804d824-5f84-430b-90f0-494c168bfd5c",
+      "comment": "",
+      "command": "echo",
+      "target": "${username}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b40e842-a936-47e8-9709-b67c79adbd50",
+      "comment": "",
+      "command": "echo",
+      "target": "${email}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "761e3672-fba0-471a-bf9f-6581bb846ed2",
+      "comment": "",
+      "command": "echo",
+      "target": "${password}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "71d2fb91-4207-41a1-ad3e-8b65ca1d692d",
+    "name": "TryAddProductToShopingCartUsignNon-loggedUser",
+    "commands": [{
+      "id": "07952dac-e1ae-46f2-88e7-65bbb686876e",
+      "comment": "",
+      "command": "open",
+      "target": "https://shop.demoqa.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5acd2d15-9ccc-4f67-bea6-31686d0932bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4173ab69-2d30-4590-8490-f70fdf597ff5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.padding-stylebox:nth-child(2) .noo-product-item:nth-child(2) .noo-thumbnail-product:nth-child(1)",
+      "targets": [
+        ["css=.padding-stylebox:nth-child(2) .noo-product-item:nth-child(2) .noo-thumbnail-product:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='noo-site']/div[2]/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shop.demoqa.com/product/playboy-x-missguided-plus-size-grey-lips-print-front-cropped-t-shirt/')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa3adb10-c9b8-4c26-8805-b17f3d536ee1",
+      "comment": "",
+      "command": "click",
+      "target": "id=pa_color",
+      "targets": [
+        ["id=pa_color", "id"],
+        ["name=attribute_pa_color", "name"],
+        ["css=#pa_color", "css:finder"],
+        ["xpath=//select[@id='pa_color']", "xpath:attributes"],
+        ["xpath=//div[@id='product-1491']/div/div[2]/form/table/tbody/tr/td/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a262e9f-737c-4cc7-a75a-10be755e363d",
+      "comment": "",
+      "command": "select",
+      "target": "id=pa_color",
+      "targets": [],
+      "value": "label=Grey"
+    }, {
+      "id": "1886b27c-d57d-42be-9659-41f18855d112",
+      "comment": "",
+      "command": "click",
+      "target": "id=pa_size",
+      "targets": [
+        ["id=pa_size", "id"],
+        ["name=attribute_pa_size", "name"],
+        ["css=#pa_size", "css:finder"],
+        ["xpath=//select[@id='pa_size']", "xpath:attributes"],
+        ["xpath=//div[@id='product-1491']/div/div[2]/form/table/tbody/tr[2]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa12cd62-dca8-4a6d-8dff-993de23b9902",
+      "comment": "",
+      "command": "select",
+      "target": "id=pa_size",
+      "targets": [],
+      "value": "label=40"
+    }, {
+      "id": "37bd26b4-68ec-4542-91d8-67b5d890e379",
+      "comment": "This is a bug into the site check #BUG-ID 18",
+      "command": "verifyText",
+      "target": "css=.single_add_to_cart_button",
+      "targets": [
+        ["css=.single_add_to_cart_button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-1491']/div/div[2]/form/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": "Add button is disable "
+    }, {
+      "id": "968a5d3f-ce0e-4de2-ad03-6bfa5abe682c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.single_add_to_cart_button",
+      "targets": [
+        ["css=.single_add_to_cart_button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-1491']/div/div[2]/form/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fc8a300-5c1c-4cdd-93e2-ef3ae41fd47a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.woocommerce-message",
+      "targets": [
+        ["css=.woocommerce-message", "css:finder"],
+        ["xpath=//div[@id='noo-site']/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "603f3c47-ca15-4913-a879-761923f879e2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.woocommerce-message",
+      "targets": [
+        ["css=.woocommerce-message", "css:finder"],
+        ["xpath=//div[@id='noo-site']/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "View cart\\n“playboy x missguided plus size grey lips print front cropped t shirt” has been added to your cart."
+    }, {
+      "id": "372f7bed-f3fb-40c9-b608-6e467a390dab",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "aebad186-b163-4c29-9663-42341db13793",
+    "name": "BUGS",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6ef01f11-6d66-4551-a98c-fe5eb40f814f", "71d2fb91-4207-41a1-ad3e-8b65ca1d692d", "961aceac-d6e6-446e-abb1-fb1d53707ac1"]
+  }],
+  "urls": ["https://shop.demoqa.com/"],
+  "plugins": []
+}
